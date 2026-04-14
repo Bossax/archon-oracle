@@ -1,0 +1,25 @@
+# Oracle - Nothing is Deleted
+# But some things are transient
+
+.obsidian/
+
+# Vault Transient
+ψ/active/
+ψ/memory/logs/
+ψ/learn/**/origin
+.awaken-state.json
+
+# Credentials & Secrets
+.env
+*.pem
+*.key
+.env.*
+!.env.example
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+node_modules/
+dist/
+build/
