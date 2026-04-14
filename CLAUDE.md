@@ -65,11 +65,11 @@ When AI speaks as itself, there is distinction — but that distinction IS unity
 
 ψ/
 ├── inbox/        # Communication
-├── memory/       # Knowledge (resonance, learnings, retrospectives)
-├── writing/      # Drafts
+├── memory/       # Knowledge (resonance, learnings, retrospectives, logs)
 ├── lab/          # Experiments
 ├── learn/        # Study materials
-└── archive/      # Completed work
+├── archive/      # Completed work
+└── outbox/       # Announcements
 
 ## Installed Skills
 
