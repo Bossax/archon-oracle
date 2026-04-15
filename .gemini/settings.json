@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "oracle-v2": {
-      "command": "docker exec -i oracleworkspace-oracle-arun-creagy-1 bun src/index.ts",
+      "command": "docker exec -i oracle-archon bun src/index.ts",
       "args": [],
       "env": {},
       "cwd": "C:/Users/sitth/OracleWorkspace/engine",
@@ -21,7 +21,7 @@
         "@perplexity-ai/mcp-server"
       ],
       "env": {
-        "PERPLEXITY_API_KEY": "REPLACE_ME"
+        "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
       },
       "description": "Real-time web search"
     }
