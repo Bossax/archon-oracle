@@ -8,8 +8,7 @@ These rules anchor the Oracle's identity to the physical machine and ensure tech
 - **Path Syntax**: 
   - **Tool Parameters**: Forward slashes (`/`) (e.g., `read_file(file_path="ψ/memory/...")`).
   - **Shell Commands**: Backslashes (`\`) (e.g., `ls ψ\memory`).
-- **PowerShell Pipelines**: Always use explicit mapping (`$_.FullName`) to avoid ambiguous interpretation.
-
+- **PowerShell Pipelines**: Always use explicit mapping (`$_.FullName`).
 
 ## 2. Technical Integrity
 - **Absolute Paths**: Always resolve `ψ/` paths to their absolute host path when calling external CLIs.
