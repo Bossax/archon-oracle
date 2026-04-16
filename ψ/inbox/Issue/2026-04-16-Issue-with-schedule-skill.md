@@ -3,6 +3,8 @@ tags:
   - roo
   - powershell
 source_oracle: Arun Oracle
+status:
+  - active
 ---
 
 Roo ran `/schedule` global skill

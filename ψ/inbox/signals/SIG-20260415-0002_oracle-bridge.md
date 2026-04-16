@@ -1,10 +1,16 @@
 ---
-signal_id: "SIG-20260415-0002"
-source_oracle: "Archon Oracle"
-timestamp: "2026-04-15 02:15"
-priority: "high"
-friction_score: "0.7 (Need for cross-repo connectivity)"
-tags: ["skill-request", "bridge", "communication", "connectivity"]
+signal_id: SIG-20260415-0002
+source_oracle: Archon Oracle
+timestamp: 2026-04-15 02:15
+priority: high
+friction_score: 0.7 (Need for cross-repo connectivity)
+tags:
+  - skill-request
+  - bridge
+  - communication
+  - connectivity
+status:
+  - archived
 ---
 
 # Oracle Signal: Oracle Bridge Development

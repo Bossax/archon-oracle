@@ -1,10 +1,16 @@
 ---
-signal_id: "SIG-YYYYMMDD-XXXX"
-source_oracle: "Name of the Oracle submitting the signal"
-timestamp: "YYYY-MM-DD HH:MM"
-priority: "low|medium|high|critical"
-friction_score: "0.0-1.0 (How much this blocks work)"
-tags: ["skill-request", "bug", "philosophy-drift", "optimization"]
+signal_id: SIG-YYYYMMDD-XXXX
+source_oracle: Name of the Oracle submitting the signal
+timestamp: YYYY-MM-DD HH:MM
+priority: low|medium|high|critical
+friction_score: 0.0-1.0 (How much this blocks work)
+tags:
+  - skill-request
+  - bug
+  - philosophy-drift
+  - optimization
+status:
+  - active
 ---
 
 # Oracle Signal: [Brief Title]

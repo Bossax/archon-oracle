@@ -1,10 +1,16 @@
 ---
-signal_id: "SIG-20260415-0001"
-source_oracle: "Archon Oracle"
-timestamp: "2026-04-15 02:05"
-priority: "high"
-friction_score: "0.8 (Critical for fleet expansion)"
-tags: ["skill-request", "genesis", "incubation", "lab"]
+signal_id: SIG-20260415-0001
+source_oracle: Archon Oracle
+timestamp: 2026-04-15 02:05
+priority: high
+friction_score: 0.8 (Critical for fleet expansion)
+tags:
+  - skill-request
+  - genesis
+  - incubation
+  - lab
+status:
+  - archived
 ---
 
 # Oracle Signal: Oracle Lab Genesis
