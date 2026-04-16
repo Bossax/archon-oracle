@@ -3,7 +3,7 @@ title: # Learning: Skill Lifecycle and Quiet Mandates (2026-04-15)
 tags: [skill-lifecycle, mandates, architecture, autonomy, design-requirement-document]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Learning: Skill Lifecycle and Quiet Mandates (2026-04-15)

@@ -3,7 +3,7 @@ title: # Learning: Identity as a Systemic Filter (2026-04-14)
 tags: [identity, architecture, systemic-logic, registry, persona]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Learning: Identity as a Systemic Filter (2026-04-14)

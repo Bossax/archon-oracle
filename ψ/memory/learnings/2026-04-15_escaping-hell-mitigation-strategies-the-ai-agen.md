@@ -3,7 +3,7 @@ title: # Escaping Hell Mitigation Strategies
 tags: [mitigation-strategies, technical-integrity, tool-usage-best-practices, file-patching-patterns]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Escaping Hell Mitigation Strategies

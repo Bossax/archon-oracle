@@ -3,7 +3,7 @@ title: # Mandate: Downstream Autonomy (Self-Execution)
 tags: [downstream-autonomy, self-execution-mandate, shipment-package, principles]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Mandate: Downstream Autonomy (Self-Execution)

@@ -1,0 +1,16 @@
+{
+  "contacts": {
+    "arun": {
+      "inbox": "../Arun_Creagy/ψ/inbox",
+      "repo": "github.com/Bossax/arun-creagy"
+    },
+    "susu": {
+      "inbox": "../Susu_Ocean/ψ/inbox",
+      "repo": "github.com/Bossax/susu-ocean"
+    },
+    "susu-heat": {
+      "inbox": "../Susu_Heat/ψ/inbox",
+      "repo": "github.com/Bossax/susu-heat"
+    }
+  }
+}

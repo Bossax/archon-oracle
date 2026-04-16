@@ -3,7 +3,7 @@ title: # The Three Pillars of the Mandate & Hard Boundaries
 tags: [strategic-pillars, contextual-purity, systemic-memory, shipping-standard, boundaries]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # The Three Pillars of the Mandate & Hard Boundaries

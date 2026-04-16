@@ -1,4 +1,4 @@
-﻿# Learning: Skill Lifecycle and Quiet Mandates (2026-04-15)
+# Learning: Skill Lifecycle and Quiet Mandates (2026-04-15)
 
 **Pattern**: Using a three-tier lifecycle (Ship/Install/Execute) and preserving mandate purity.
 **Concepts**: architecture, autonomy, lifecycle, mandates

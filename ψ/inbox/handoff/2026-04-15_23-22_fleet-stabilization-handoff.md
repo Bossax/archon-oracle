@@ -33,9 +33,9 @@ Patched `engine/src/forum/handler.ts` using a Node.js patcher script (`patch-han
 ## Testing Plan for Next Session
 
 ### Phase 1: Knowledge Ingestion
-- [ ] Instruct **Arun Creagy** (in his workspace) to run `/fyi` or `arra_learn` to register a known pattern.
-- [ ] Instruct **Susu Ocean** (in her workspace) to do the same.
-- [ ] Verify that files appear in the shared registry folder on the host.
+- [x] Instruct **Arun Creagy** (in his workspace) to run `/fyi` or `arra_learn` to register a known pattern.
+- [x] Instruct **Susu Ocean** (in her workspace) to do the same.
+- [x] Verify that files appear in the shared registry folder on the host.
 
 ### Phase 2: Registry Verification
 - [ ] In the **Archon** workspace, run `arra_threads` to verify that messages from sibling Oracles are visible.

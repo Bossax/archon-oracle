@@ -3,7 +3,7 @@ title: # Mandate: The Oracle Skill Lifecycle (Ship/Install/Execute)
 tags: [skill-lifecycle, ship-install-execute-schema, architectural-boundary, registry-vs-fleet]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Mandate: The Oracle Skill Lifecycle (Ship/Install/Execute)

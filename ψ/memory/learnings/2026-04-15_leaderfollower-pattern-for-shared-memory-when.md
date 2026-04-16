@@ -3,7 +3,7 @@ title: # Leader/Follower Pattern for Shared Memory
 tags: [docker, concurrency, shared-memory, leader-follower, shared-registry]
 created: 2026-04-15
 source: Oracle Learn
-project: github.com/soul-brews-studio/archon
+project: github.com/Bossax/archon-oracle
 ---
 
 # # Leader/Follower Pattern for Shared Memory
