@@ -1,42 +1,45 @@
-# Design Requirement Document (DRD): Oracle Lab v2.3.0
+# Design Requirement Document (DRD): Oracle Lab v3.0.0
 
 **Signal ID**: SIG-20260416-0003
-**Status**: Revised Design (Human-in-the-Loop)
+**Status**: Revised Design (Blueprint-Driven Engineering)
 **Owner**: Archon Oracle
 **Priority**: Critical
 
 ## 1. Objective
-Transform fleet friction into production-ready skills through a **Human-Approved** manufacturing process. The Lab acts as an advisor, proposing strategic improvements rather than executing them autonomously.
+Transform fleet friction into production-ready Oracle skills through a structured, blueprint-driven manufacturing process. The Lab provides the assembly line for discoverable, secure, and action-oriented capabilities.
 
-## 2. The "Propose First" Mandate
+## 2. Technical Standards
+Every skill created by the Lab MUST meet these non-negotiable criteria:
+1. **Discoverability**: The skill `name` in frontmatter MUST match the project directory (slug).
+2. **Action-Oriented**: The `description` MUST start with a strong action verb (Imperative mood).
+3. **Secure-by-Design**: Plaintext secrets are strictly prohibited. The "Explicit Environment Injection" pattern must be used for all Win32 credentials.
 
-**No Automatic Incubation**: The `/lab triage` command must NOT create folders or modify the project registry. It should only identify "Candidates" for the Human to review.
+## 3. Engineering Workflow
 
-## 3. Revised Workflow
+### A. Phase 1: Strategic Blueprinting (`/lab analyze`)
+- **Action**: Scan Candidates and generate a `[slug]-blueprint.md` for each new project.
+- **Blueprint Purpose**: Acts as the initial technical contract. It defines:
+    - Problem Statement.
+    - Technical Goals (using Action Verbs).
+    - **Implementation Plan**: Explicit list of files to be created (e.g., `- Create \`ψ/lab/[slug]/scripts/main.ts\``).
 
-### A. Phase 1: Discovery (`/lab triage`)
-- **Action**: Scan `ψ/inbox/issue/` and `ψ/inbox/signals/`.
-- **Output**: A list of new friction points grouped by tag/component.
-- **Internal State**: No files are changed.
+### B. Phase 2: Autonomous Engineering (`/lab craft <slug>`)
+- **Action**: Parse the `DRD.md` or `blueprint.md` and execute the scaffold.
+- **Scaffolding**:
+    - Automatically create the directory structure.
+    - Create placeholder files for every item listed in the **Implementation Plan**.
+    - Generate a standardized `SKILL.md` with action-verb enforcement.
+- **Discoverability**: Automatically sync the frontmatter name to the project slug.
 
-### B. Phase 2: Strategic Proposal (`/lab analyze`)
-- **Action**: Map new friction to existing skills.
-- **Proposal Format**:
-    - **Context**: Summary of the friction.
-    - **Analysis**: "Improve [Skill X]" vs "Create [New Skill Y]".
-    - **Objective**: Proposed single-sentence "Why".
-    - **Scope**: Proposed boundaries.
-- **Approval**: The Human reviews the proposal.
+### C. Phase 3: Production Shipping (`/lab ship <slug>`)
+- **Validation Engine**:
+    - **Abort** if the description does not start with an action verb.
+    - **Warn** if potential plaintext secrets are detected.
+    - **Auto-Derive**: Attempt to extract the description from the markdown body's "Goal" section if missing.
+- **Fleet Sync**: Package and deliver to all targeted Oracle workspaces.
 
-### C. Phase 3: Execution (Manual)
-- **New Skill**: Only created when the Human says "Yes" via `/lab incubate <name>`.
-- **Improvement**: Only started when the Human says "Yes" to updating an existing project's DRD.
-
-## 4. Skill Schema
-Every project MUST maintain a `SKILL.md` with:
-- **Objective**: Clear purpose.
-- **Scope**: Explicit In/Out boundaries.
-This schema is used during analysis to prevent overlapping responsibilities.
+## 4. Governance
+The Lab enforces systemic alignment by treating instructions as infrastructure. Every modification to the fleet's soul must pass through this forge.
 
 ---
-**Philosophy**: "The Oracle suggests; the Human decides; the Lab executes." 🟦
+**Philosophy**: "The Blueprint defines the Form; the Craft executes the Will." 🟦

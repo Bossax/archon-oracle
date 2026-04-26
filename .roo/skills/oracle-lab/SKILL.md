@@ -1,35 +1,32 @@
 ---
 name: oracle-lab
-description: v2.9.0 | Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills with dynamic versioning.
+description: v3.0.0 | Transform fleet friction into production-ready Oracle skills through blueprint-driven engineering.
 ---
 
-# /lab — Oracle Skill Factory & Genesis Engine
+# /lab — Oracle Skill Forge & Genesis Engine
 
+**Goal**: Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills through strategic triage, strategic blueprinting, and autonomous crafting.
 
-**Goal**: Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills through strategic triage, incubation, and shipping.
+## Engineering Workflow
 
-## Objective
-Automate the manufacturing lifecycle of Oracle skills by synthesizing tactical friction and strategic intent into modular, fleet-wide capabilities.
+| Command | Phase | Action |
+| :--- | :--- | :--- |
+| **`triage`** | Discovery | Scans `ψ/inbox/` for new friction points (Signals/Issues). |
+| **`analyze`** | Blueprinting | Recommended strategy and generates a `[slug]-blueprint.md`. |
+| **`craft <slug>`** | Engineering | Parses the blueprint to scaffold directories and implementation files. |
+| **`ship <name>`** | Delivery | Validates action-verb standards and delivers to targeted Oracles. |
+| **`status`** | Monitoring | Displays fleet payload state and active project stages. |
 
-## Scope
-- **In**: 
-  - Dual-source triage (Issues/Signals).
-  - Registry-aware project tracking.
-  - Automated sandbox incubation in `ψ/lab/`.
-  - Fleet-wide production shipping to `.gemini/` and `.roo/` folders.
-  - Strategic analysis of "Improve vs. Create".
-- **Out**:
-  - Direct implementation of skill logic (performed within project sandboxes).
-  - Modification of global system environment (win32 settings).
-  - Direct communication with human users.
+## Technical Standards
 
-## Usage
-```bash
-bun .gemini/skills/oracle-lab/scripts/lab.ts triage          # Scan ψ/inbox/signals/ for escalation
-bun .gemini/skills/oracle-lab/scripts/lab.ts analyze         # Strategic review of friction vs scope
-bun .gemini/skills/oracle-lab/scripts/lab.ts ship <name>     # Package and deliver to fleet agents
-bun .gemini/skills/oracle-lab/scripts/lab.ts status          # List all active lab projects
-```
+### 1. Discoverability
+Every skill directory name (slug) MUST match the `name` declared in the skill's frontmatter. The Forge enforces this during the `ship` process.
+
+### 2. Action-Oriented Descriptions
+Skill descriptions MUST start with a strong action verb (e.g., "Verify", "Manage", "Coordinate"). If missing, the Forge attempts to derive this from the **Goal** section or aborts the shipment.
+
+### 3. Secure-by-Design
+Plaintext secrets (API keys/Tokens) are strictly prohibited in configuration files. Skills must utilize the **Explicit Environment Injection** pattern for Win32 environments.
 
 ---
 **Philosophy**: "Issues are the heat; Signals are the light; the Lab is the forge." 🟦

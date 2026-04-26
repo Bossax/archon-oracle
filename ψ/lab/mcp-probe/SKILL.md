@@ -1,6 +1,6 @@
 ---
 name: mcp-probe
-description: v1.0.0 | Diagnostic tool to verify MCP environment inheritance and runtime health.
+description: v1.1.0 | Diagnostic tool to verify MCP environment inheritance and runtime health.
 ---
 
 # /mcp-probe — Diagnostic Tool
@@ -9,15 +9,16 @@ description: v1.0.0 | Diagnostic tool to verify MCP environment inheritance and 
 
 ## Usage
 
-```bash
-# Register this probe in your mcp.json to debug auth issues
+Register this probe in your `mcp.json` to debug auth issues:
+
+```json
 {
   "mcpServers": {
-    "probe": {
+    "mcp-probe": {
       "command": "bun",
       "args": ["{{PATH_TO_PROBE}}/probe.ts"],
       "env": {
-        "TEST_VAR": "verification_value"
+        "PROBE_VERIFICATION": "active"
       }
     }
   }
@@ -30,11 +31,11 @@ description: v1.0.0 | Diagnostic tool to verify MCP environment inheritance and 
 Returns the environment variables visible to the MCP process.
 - `filter`: (Optional) Substring to filter keys (e.g., "API", "PATH").
 
-## Troubleshooting Workflow
-1. If an auth-protected MCP fails (e.g., Perplexity 401), install `mcp-probe`.
-2. Call `probe_env(filter: "PERPLEXITY")`.
-3. If the variable is missing or incorrect, use the **Explicit Injection Pattern** in `mcp.json`:
+## 🔒 Security Hardening (Win32)
 
+To prevent plaintext API keys in configuration files, use the **Explicit Environment Injection** pattern. This ensures the MCP process inherits keys directly from your system environment without storing them in `mcp.json`.
+
+**Recommended Secure Pattern:**
 ```json
 "perplexity": {
   "command": "cmd",

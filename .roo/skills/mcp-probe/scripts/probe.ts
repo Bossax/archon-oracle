@@ -12,7 +12,7 @@ import {
 const server = new Server(
   {
     name: "mcp-probe",
-    version: "1.0.0",
+    version: "1.2.0",
   },
   {
     capabilities: {

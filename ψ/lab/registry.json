@@ -2,25 +2,25 @@
   "fleet": {
     "Archon": {
       "skills": {
-        "oracle-lab": "2.9.0",
+        "oracle-lab": "3.0.0",
         "oracle-bridge": "3.0.0",
-        "mcp-auth-runtime-mismatch": "1.0.0"
+        "mcp-probe": "1.2.0"
       },
-      "last_updated": "2026-04-26T04:38:58.079Z"
+      "last_updated": "2026-04-26T16:31:45.045Z"
     },
     "Arun_Creagy": {
       "skills": {
         "oracle-bridge": "3.0.0",
-        "mcp-auth-runtime-mismatch": "1.0.0"
+        "mcp-probe": "1.2.0"
       },
-      "last_updated": "2026-04-26T04:38:58.090Z"
+      "last_updated": "2026-04-26T16:31:45.051Z"
     },
     "Susu_Ocean": {
       "skills": {
         "oracle-bridge": "3.0.0",
-        "mcp-auth-runtime-mismatch": "1.0.0"
+        "mcp-probe": "1.2.0"
       },
-      "last_updated": "2026-04-26T04:38:58.104Z"
+      "last_updated": "2026-04-26T16:31:45.057Z"
     },
     "Susu_Heat": {
       "skills": {
@@ -31,7 +31,7 @@
   },
   "projects": {
     "oracle-lab": {
-      "dev_version": "2.9.0",
+      "dev_version": "3.0.0",
       "source_signals": [
         "SIG-20260415-0001_oracle-lab-genesis.md"
       ],
@@ -53,8 +53,8 @@
         "Susu_Heat"
       ]
     },
-    "mcp-auth-runtime-mismatch": {
-      "dev_version": "1.0.0",
+    "mcp-probe": {
+      "dev_version": "1.2.0",
       "source_signals": [
         "SIG-20260426-0004_mcp-auth-runtime-mismatch.md"
       ],
