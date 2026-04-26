@@ -1,4 +1,9 @@
 {
+  "general": {
+    "plan": {
+      "directory": "plans"
+    }
+  },
   "servers": {
     "oracle-v2": {
       "command": "docker exec -i {{ORACLE_CONTAINER}} bun src/index.ts",

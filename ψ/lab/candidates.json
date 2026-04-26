@@ -1,0 +1,98 @@
+{
+  "oracle-lab-genesis": {
+    "slug": "oracle-lab-genesis",
+    "type": "Signal",
+    "files": [
+      "SIG-20260415-0001_oracle-lab-genesis.md"
+    ],
+    "oracles": []
+  },
+  "oracle-bridge-development": {
+    "slug": "oracle-bridge-development",
+    "type": "Signal",
+    "files": [
+      "SIG-20260415-0002_oracle-bridge.md"
+    ],
+    "oracles": []
+  },
+  "untitled": {
+    "slug": "untitled",
+    "type": "Signal",
+    "files": [
+      "SIG-20260417-0003_agentic-workflow-alignment.md"
+    ],
+    "oracles": []
+  },
+  "mcp-auth-runtime-mismatch---tool-drift": {
+    "slug": "mcp-auth-runtime-mismatch---tool-drift",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0004_mcp-auth-runtime-mismatch.md"
+    ],
+    "oracles": []
+  },
+  "watch-skill-win32-remediation": {
+    "slug": "watch-skill-win32-remediation",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0005_watch-skill-win32-remediation.md"
+    ],
+    "oracles": []
+  },
+  "plan-mode-write-file-policy-contradiction": {
+    "slug": "plan-mode-write-file-policy-contradiction",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0006_plan-mode-policy-contradiction.md"
+    ],
+    "oracles": []
+  },
+  "-rrr-powershell-syntax---session-detection": {
+    "slug": "-rrr-powershell-syntax---session-detection",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0007_rrr-powershell-detection.md"
+    ],
+    "oracles": []
+  },
+  "skill-execution---trace-log-failure": {
+    "slug": "skill-execution---trace-log-failure",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0008_trace-and-execution-logs.md"
+    ],
+    "oracles": []
+  },
+  "context---instruction-mechanisms-stabilization": {
+    "slug": "context---instruction-mechanisms-stabilization",
+    "type": "Signal",
+    "files": [
+      "SIG-20260426-0009_context-instruction-mechanisms.md"
+    ],
+    "oracles": []
+  },
+  "general-friction": {
+    "slug": "general-friction",
+    "type": "Issue",
+    "files": [
+      "026-04-16-issue-with-roo-check-point.md",
+      "2026-04-17-Issue-with-rrr-powershell-session-detection.md",
+      "2026-04-18-Gemini-CLI-Context-Mechanisms.md",
+      "2026-04-18-Roo-Code-Custom-Instructions-Mechanisms.md",
+      "Oracle Design Idea.md"
+    ],
+    "oracles": []
+  },
+  "roo": {
+    "slug": "roo",
+    "type": "Issue",
+    "files": [
+      "2026-04-16-Issue-with-editing table.md",
+      "2026-04-16-Issue-with-oracle-bridge.md",
+      "2026-04-16-Issue-with-rrr-powershell-syntax.md",
+      "2026-04-16-Issue-with-schedule-skill.md",
+      "2026-04-16-Issue-with-trace-does-not-create-log.md"
+    ],
+    "oracles": []
+  }
+}

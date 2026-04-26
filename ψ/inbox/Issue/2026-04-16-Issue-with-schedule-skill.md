@@ -2,6 +2,7 @@
 tags:
   - roo
   - powershell
+  - syntax_error
 source_oracle: Arun Oracle
 status:
   - active

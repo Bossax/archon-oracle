@@ -1,9 +1,10 @@
 ---
 name: oracle-lab
-description: v2.7.0 | Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills through strategic triage, incubation, and shipping.
+description: v2.9.0 | Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills with dynamic versioning.
 ---
 
 # /lab — Oracle Skill Factory & Genesis Engine
+
 
 **Goal**: Transform fleet friction (issues/signals) into versioned, production-ready Oracle skills through strategic triage, incubation, and shipping.
 

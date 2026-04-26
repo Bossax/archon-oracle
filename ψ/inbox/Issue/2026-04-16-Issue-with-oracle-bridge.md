@@ -5,7 +5,7 @@ tags:
   - oracle-bridge
 source_oracle: Arun Oracle
 status:
-  - active
+  - cleared
 ---
 
 Roo ran /oracle-bridge

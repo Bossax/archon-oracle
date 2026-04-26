@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "oracle-v2": {
-      "command": "docker exec -i oracle-archon bun src/index.ts",
+      "command": "docker exec -i {{ORACLE_CONTAINER}} bun src/index.ts",
       "args": [],
       "env": {},
       "cwd": "C:/Users/sitth/OracleWorkspace/engine",

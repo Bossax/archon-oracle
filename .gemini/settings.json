@@ -1,4 +1,9 @@
 {
+  "general": {
+    "plan": {
+      "directory": "plans"
+    }
+  },
   "mcpServers": {
     "oracle-v2": {
       "command": "docker exec -i oracle-archon bun src/index.ts",
@@ -9,20 +14,13 @@
     },
     "notebooklm": {
       "command": "npx",
-      "args": [
-        "notebooklm-mcp@latest"
-      ],
+      "args": ["notebooklm-mcp@latest"],
       "description": "Deep research and document extraction"
     },
     "perplexity": {
       "command": "npx",
-      "args": [
-        "-y",
-        "@perplexity-ai/mcp-server"
-      ],
-      "env": {
-        "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}"
-      },
+      "args": ["-y", "@perplexity-ai/mcp-server"],
+      "env": { "PERPLEXITY_API_KEY": "${PERPLEXITY_API_KEY}" },
       "description": "AI web search"
     }
   }
