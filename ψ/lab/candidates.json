@@ -15,16 +15,16 @@
     ],
     "oracles": []
   },
-  "untitled": {
-    "slug": "untitled",
+  "sig-20260417-0003-instruction-bloat-and-epiv-loop-adoption": {
+    "slug": "sig-20260417-0003-instruction-bloat-and-epiv-loop-adoption",
     "type": "Signal",
     "files": [
       "SIG-20260417-0003_agentic-workflow-alignment.md"
     ],
     "oracles": []
   },
-  "mcp-auth-runtime-mismatch---tool-drift": {
-    "slug": "mcp-auth-runtime-mismatch---tool-drift",
+  "mcp-auth-runtime-mismatch-tool-drift": {
+    "slug": "mcp-auth-runtime-mismatch-tool-drift",
     "type": "Signal",
     "files": [
       "SIG-20260426-0004_mcp-auth-runtime-mismatch.md"
@@ -47,51 +47,59 @@
     ],
     "oracles": []
   },
-  "-rrr-powershell-syntax---session-detection": {
-    "slug": "-rrr-powershell-syntax---session-detection",
+  "rrr-powershell-syntax-session-detection": {
+    "slug": "rrr-powershell-syntax-session-detection",
     "type": "Signal",
     "files": [
       "SIG-20260426-0007_rrr-powershell-detection.md"
     ],
     "oracles": []
   },
-  "skill-execution---trace-log-failure": {
-    "slug": "skill-execution---trace-log-failure",
+  "skill-execution-trace-log-failure": {
+    "slug": "skill-execution-trace-log-failure",
     "type": "Signal",
     "files": [
       "SIG-20260426-0008_trace-and-execution-logs.md"
     ],
     "oracles": []
   },
-  "context---instruction-mechanisms-stabilization": {
-    "slug": "context---instruction-mechanisms-stabilization",
+  "context-instruction-mechanisms-stabilization": {
+    "slug": "context-instruction-mechanisms-stabilization",
     "type": "Signal",
     "files": [
       "SIG-20260426-0009_context-instruction-mechanisms.md"
     ],
     "oracles": []
   },
-  "general-friction": {
-    "slug": "general-friction",
-    "type": "Issue",
+  "roo-code-massive-command-block-behavior": {
+    "slug": "roo-code-massive-command-block-behavior",
+    "type": "Signal",
     "files": [
-      "026-04-16-issue-with-roo-check-point.md",
-      "2026-04-17-Issue-with-rrr-powershell-session-detection.md",
-      "2026-04-18-Gemini-CLI-Context-Mechanisms.md",
-      "2026-04-18-Roo-Code-Custom-Instructions-Mechanisms.md",
-      "Oracle Design Idea.md"
+      "SIG-20260501-0010_roo-code-massive-command-block.md"
     ],
     "oracles": []
   },
-  "roo": {
-    "slug": "roo",
-    "type": "Issue",
+  "powershell-variable-syntax-error-in-roo-code": {
+    "slug": "powershell-variable-syntax-error-in-roo-code",
+    "type": "Signal",
     "files": [
-      "2026-04-16-Issue-with-editing table.md",
-      "2026-04-16-Issue-with-oracle-bridge.md",
-      "2026-04-16-Issue-with-rrr-powershell-syntax.md",
-      "2026-04-16-Issue-with-schedule-skill.md",
-      "2026-04-16-Issue-with-trace-does-not-create-log.md"
+      "SIG-20260501-0011_powershell-syntax-failure.md"
+    ],
+    "oracles": []
+  },
+  "oracle-bridge-execution-skip-judgment-error": {
+    "slug": "oracle-bridge-execution-skip-judgment-error",
+    "type": "Signal",
+    "files": [
+      "SIG-20260501-0012_bridge-execution-skip.md"
+    ],
+    "oracles": []
+  },
+  "critical-reasoning-failure-expert-bias-arun-feedback": {
+    "slug": "critical-reasoning-failure-expert-bias-arun-feedback",
+    "type": "Signal",
+    "files": [
+      "SIG-20260501-0013_reasoning-failure-expert-bias.md"
     ],
     "oracles": []
   }

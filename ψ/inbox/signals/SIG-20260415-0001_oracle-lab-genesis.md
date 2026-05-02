@@ -3,6 +3,7 @@ signal_id: SIG-20260415-0001
 source_oracle: Archon Oracle
 timestamp: 2026-04-15 02:05
 priority: high
+title: Oracle Lab Genesis
 friction_score: 0.8 (Critical for fleet expansion)
 tags:
   - skill-request

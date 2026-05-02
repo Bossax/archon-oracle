@@ -3,6 +3,7 @@ import { join, basename } from 'path';
 
 const INBOX_DIR = 'ψ/inbox/signals';
 const LAB_DIR = 'ψ/lab';
+const CANDIDATES_FILE = join(LAB_DIR, 'candidates.json');
 
 async function triageSignals() {
   console.log('📡 Scanning Oracle Signal Inbox...');
@@ -19,17 +20,42 @@ async function triageSignals() {
     return;
   }
 
+  // Load existing candidates
+  let candidates: any = {};
+  if (existsSync(CANDIDATES_FILE)) {
+    candidates = JSON.parse(readFileSync(CANDIDATES_FILE, 'utf8'));
+  }
+
   for (const signalFile of signals) {
     const signalPath = join(INBOX_DIR, signalFile);
     const content = readFileSync(signalPath, 'utf8');
     
-    // Simple regex to find name for directory
-    const titleMatch = content.match(/# Oracle Signal: (.*)/);
-    const title = titleMatch ? titleMatch[1].trim() : 'untitled-signal';
-    const slug = title.toLowerCase().replace(/[^a-z0-9]/g, '-');
+    // Extract title from YAML frontmatter or H1 header
+    const titleMatch = content.match(/^title:\s*(.*)$/m);
+    const h1Match = content.match(/^#\s+(?:Oracle Signal:\s+)?(.*)$/m);
+    const title = (titleMatch ? titleMatch[1].trim() : (h1Match ? h1Match[1].trim() : 'untitled-signal'));
+    
+    // Create slug from title
+    const slug = title.toLowerCase()
+      .replace(/[^a-z0-9]/g, '-')
+      .replace(/-+/g, '-')
+      .replace(/^-|-$/g, '');
+      
     const projectDir = join(LAB_DIR, slug);
 
-    console.log(`🔍 Triaging: ${signalFile} -> [${title}]`);
+    console.log(`🔍 Triaging: ${signalFile} -> [${title}] (${slug})`);
+
+    // Add to candidates if not present
+    if (!candidates[slug]) {
+      candidates[slug] = {
+        slug: slug,
+        type: "Signal",
+        files: [signalFile],
+        oracles: []
+      };
+    } else if (!candidates[slug].files.includes(signalFile)) {
+      candidates[slug].files.push(signalFile);
+    }
 
     if (existsSync(projectDir)) {
       console.log(`⚠️ Project directory already exists: ${projectDir}. Skipping incubation.`);
@@ -48,6 +74,10 @@ async function triageSignals() {
     
     console.log(`✅ Success: ${signalFile} escalated to ${slug}`);
   }
+
+  // Save updated candidates
+  writeFileSync(CANDIDATES_FILE, JSON.stringify(candidates, null, 2));
+  console.log('💾 Updated candidates.json');
 }
 
 triageSignals().catch(err => {
